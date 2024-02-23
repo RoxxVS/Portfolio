@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Protest+Revolution&family=Varela+Round&display=swap');
+
+/*
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 400 to 700
+
+.dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.dm-serif display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+:root {
+    --color-neon-celeste: #00ccff;
+    --color-neon-turquesa: #00ffcc;
+    --color-neon-amarillo: #ffff00;
+    --color-neon-fuccia: #ff00cc;
+    --color-neon-violeta: #cc00ff;
+    --color-oscuro-1: #11001c;
+    --color-oscuro-2: #290025;
+    --color-oscuro-3: #35012c;
+    --color-claro: #fffffc;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6vw;
+}
+body {
+    background-color: var(--color-oscuro-3);
+    color: var(--color-claro);
+}
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-oscuro-2);
+    box-shadow: 0 2px 15px 10px var(--color-oscuro-1);
+}
+header div {
+    width: 20%;
+}
+header div span{
+    
+    display: block;
+    padding: 3% 15%;
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    
+    
+}
+#navbar {
+    width: 50%;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar ul li {
+    display: list-item;
+}
+#navbar ul li a {
+    display: block;
+    padding: 12% 10%;
+    color: var(--color-claro);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+#navbar ul li a:hover {
+    transform: translateY(2px);
+    text-shadow: 0 0 15px var(--color-neon-amarillo);
+}
+/*main*/
+/*welcome*/
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(
+        var(--color-oscuro-3),
+        var(--color-oscuro-1)
+    );
+    padding: 20% 0;
+}
+#welcome-section div.title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#welcome-section div.title h1, #welcome-section div.title h1 span {
+    display: inline-block;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+    margin: 2% auto;
+}
+@keyframes colors {
+    20% {
+        color:var(--color-neon-amarillo);
+    }
+    40% {
+        color:var(--color-neon-violeta);
+    }
+    60% {
+        color:var(--color-neon-celeste);
+    }
+    80% {
+        color:var(--color-neon-fuccia);
+    }
+    100% {
+        color:var(--color-neon-turquesa);
+    }
+}
+#welcome-section div.title h1 span {
+    animation: 3s linear infinite colors;
+}
+#welcome-section p {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+
+}
+#welcome-section p.subtitle {
+    color: var(--color-neon-fuccia);
+}
+/*Todas las secciones*/
+h2, h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px var(--color-neon-violeta);
+    margin-bottom: 5%;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+a {
+    text-decoration: none;
+    color: var(--color-claro);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+section, footer {
+    padding: 5% 2%;
+}
+section h2 {
+    padding: 0 5%;
+}
+.galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: space-evenly;
+}
+
+/*proyectos*/
+a.project-tile {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+}
+a.project-tile img {
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 3%;
+}
+a.project-tile img:hover {
+    box-shadow: 0 0 7px 5px var(--color-neon-amarillo);
+    transform: translateY(2px);
+}
+/*formacion*/
+a.cetificate-tile {
+    width: 20%;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+}
+a.cetificate-tile:hover {
+    box-shadow: 0 0 7px 5px var(--color-neon-amarillo);
+    transform: translateY(2px);
+}
+a.cetificate-tile img {
+    height: 100%;
+}
+footer {
+    margin-bottom: 10%;
+    background: linear-gradient(
+        var(--color-oscuro-3) 40%,
+        var(--color-neon-fuccia) 70%,
+        var(--color-oscuro-3)
+    );
+}
+#contact div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#contact a {
+    width: 10%;
+}
+#contact a:hover {
+    transform: translateY(2px);
+}
+#contact a img {
+    width: 100%;
+    opacity: 1;
+}
+#contact a:nth-child(3n), #contact a:nth-child(5n) {
+    margin-top: 4%;
+    width: 15%;
+}
+/*queries*/
+@media only screen and (max-width: 900px) {
+    * {
+        
+        font-size: 2vw;
+    }
+    header div {
+        width: 20%;
+    }
+    #navbar {
+        width: 60%;
+    }
+    #welcome-section {
+        padding: 45% 0;
+    }
+    a.project-tile {
+        width: 35%;
+        margin: 5% 0;
+    }
+    a.project-tile img {
+        margin-bottom: 10%;
+    }
+    a.cetificate-tile {
+        width: 30%;
+        height: 15vh;
+        margin: 3% 0;
+    }
+    #contact a {
+        width: 15%;
+    }
+    #contact a:nth-child(3n), #contact a:nth-child(5n) {
+        margin-top: 7%;
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        
+        font-size: 2.5vw;
+    }
+    header div {
+        width: 25%;
+    }
+    header div span{
+        font-size: 2.5rem;
+    }
+    #navbar {
+        width: 70%;
+    }
+    #welcome-section {
+        padding: 60% 0;
+    }
+    #welcome-section div.title h1, #welcome-section div.title h1 span {
+        font-size: 5rem;
+    }
+    #welcome-section p {
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.2rem;
+    }
+    a.cetificate-tile {
+        height: 10vh;
+    }
+}
