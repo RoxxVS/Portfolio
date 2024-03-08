@@ -208,7 +208,7 @@ a.project-tile img {
     border-radius: 5%;
     margin-bottom: 3%;
 }
-a.project-tile img:hover {
+a.project-tile:hover {
     box-shadow: 0 0 7px 5px var(--color-neon-amarillo);
     transform: translateY(2px);
 }
