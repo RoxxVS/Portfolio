@@ -198,13 +198,13 @@ section h2 {
 a.project-tile {
     width: 25%;
     height: 20vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     margin: 3% 0;
 }
 a.project-tile img {
     width: 100%;
+    height: 80%;
     border-radius: 5%;
     margin-bottom: 3%;
 }
