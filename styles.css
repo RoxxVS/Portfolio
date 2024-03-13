@@ -208,7 +208,7 @@ a.project-tile img {
     border-radius: 5%;
     margin-bottom: 3%;
 }
-a.project-tile:hover {
+a.project-tile img:hover {
     box-shadow: 0 0 7px 5px var(--color-neon-amarillo);
     transform: translateY(2px);
 }
@@ -277,6 +277,7 @@ footer {
     }
     a.project-tile img {
         margin-bottom: 10%;
+        height: 60%;
     }
     a.cetificate-tile {
         width: 30%;
